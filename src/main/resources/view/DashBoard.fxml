@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane opacity="0.93" prefHeight="812.0" prefWidth="1283.0" style="-fx-background-image: url(&quot;image/fx1.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.DashBoardForm">
+   <children>
+      <AnchorPane layoutX="32.0" layoutY="14.0" opacity="0.8" prefHeight="784.0" prefWidth="1219.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 20;" />
+      <AnchorPane layoutX="90.0" layoutY="204.0" opacity="0.95" prefHeight="170.0" prefWidth="164.0" style="-fx-background-color: #2F243A;">
+         <children>
+            <ImageView fx:id="imageOrders" fitHeight="122.0" fitWidth="140.0" layoutX="20.0" layoutY="10.0" onMouseClicked="#imageOrdersOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/biro-shopping-cart-on-wheels-with-selected-purchases.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="90.0" layoutY="605.0" opacity="0.95" prefHeight="170.0" prefWidth="164.0" style="-fx-background-color: #2F243A;">
+         <children>
+            <ImageView fx:id="imageEmployers" fitHeight="132.0" fitWidth="150.0" layoutX="16.0" onMouseClicked="#ImageEmployersOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/3d-fluency-manager.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="90.0" layoutY="404.0" opacity="0.95" prefHeight="170.0" prefWidth="164.0" style="-fx-background-color: #2F243A;">
+         <children>
+            <ImageView fx:id="imageItem" fitHeight="111.0" fitWidth="132.0" layoutX="24.0" layoutY="10.0" onMouseClicked="#imageItemOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/sammy-green-t-shirt-tunic.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="employers" layoutX="109.0" layoutY="741.0" onMouseClicked="#employersOnAction" prefHeight="35.0" prefWidth="141.0" text="Employers" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="items" layoutX="139.0" layoutY="541.0" onMouseClicked="#itemsOnAction" prefHeight="35.0" prefWidth="86.0" text="Items" textFill="#fcfcfc">
+         <font>
+            <Font name="Eras Bold ITC" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="orders" layoutX="132.0" layoutY="339.0" onMouseClicked="#lblOrdersOnAction" prefHeight="35.0" prefWidth="97.0" text="Orders" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="24.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="280.0" layoutY="58.0" prefHeight="122.0" prefWidth="282.0" style="-fx-background-color: #495867; -fx-background-radius: 20;" text="Reports" textAlignment="JUSTIFY" textFill="#f2f2f2">
+         <font>
+            <Font name="Consolas Bold" size="48.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="142.0" fitWidth="226.0" layoutX="90.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Screenshot%202023-10-06%20160703.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="1052.0" layoutY="45.0" opacity="0.95" prefHeight="170.0" prefWidth="164.0" style="-fx-background-color: #2F243A;">
+         <children>
+            <ImageView fx:id="imageSuppliers" fitHeight="122.0" fitWidth="150.0" layoutX="21.0" onMouseClicked="#imageSuppliersOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/3d-fluency-supplier.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1052.0" layoutY="415.0" opacity="0.95" prefHeight="170.0" prefWidth="164.0" style="-fx-background-color: #2F243A;">
+         <children>
+            <ImageView fx:id="imageSalesReturn" fitHeight="93.0" fitWidth="97.0" layoutX="35.0" layoutY="18.0" onMouseClicked="#imageSalesReturnOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/download.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1052.0" layoutY="607.0" opacity="0.95" prefHeight="170.0" prefWidth="164.0" style="-fx-background-color: #2F243A;">
+         <children>
+            <ImageView fx:id="imageSalesReports" fitHeight="132.0" fitWidth="150.0" layoutX="14.0" onMouseClicked="#imageSalesReportsOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/neon-data-analytics-and-visualization-on-screen.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="1053.0" layoutY="231.0" opacity="0.95" prefHeight="170.0" prefWidth="164.0" style="-fx-background-color: #2F243A;">
+         <children>
+            <ImageView fx:id="imageOrderDetails" fitHeight="132.0" fitWidth="141.0" layoutX="30.0" layoutY="5.0" onMouseClicked="#imageOrderDetailsOnAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/techny-order-receipt.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="suppliers" layoutX="1080.0" layoutY="184.0" onMouseClicked="#suppliersOnAction" text="Suppliers" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="orderDetails" layoutX="1071.0" layoutY="374.0" onMouseClicked="#orderDetailsOnAction" text="Order Details" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="salesReturn" layoutX="1075.0" layoutY="554.0" onMouseClicked="#salesReturnOnAction" text="Sales Return" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="salesReports" layoutX="1065.0" layoutY="745.0" onMouseClicked="#salesReportsOnAction" text="Sales Reports" textFill="#f8f4f4">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnLogOut" buttonType="RAISED" layoutX="611.0" layoutY="736.0" onAction="#logOutONAction" ripplerFill="BLACK" style="-fx-background-color: #800f2f;" text="Log Out" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="711.0" layoutY="68.0" opacity="0.75" prefHeight="38.0" prefWidth="132.0" style="-fx-background-color: #FF9900; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="lblTime" layoutX="6.0" prefHeight="38.0" prefWidth="126.0" text="10:20:30 a.m">
+               <font>
+                  <Font name="Eras Bold ITC" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="710.0" layoutY="110.0" opacity="0.8" prefHeight="38.0" prefWidth="135.0" style="-fx-background-color: #FF9900; -fx-background-radius: 10;">
+         <children>
+            <Label fx:id="lblDate" alignment="CENTER" layoutX="13.0" layoutY="6.0" text="03.10.2023">
+               <font>
+                  <Font name="Eras Bold ITC" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="422.0" layoutY="240.0" prefHeight="48.0" prefWidth="511.0" style="-fx-background-color: #DCDCDC;">
+         <children>
+            <Label layoutX="55.0" layoutY="11.0" text="Gents">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="173.0" layoutY="10.0" text="Kids">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="439.0" layoutY="14.0" text="Other">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="301.0" layoutY="11.0" text="Ladies">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="437.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-blue-circle-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="554.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-yellow-circle-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="680.0" layoutY="251.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-red-circle-48.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="821.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-green-circle-48.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

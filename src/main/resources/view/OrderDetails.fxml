@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1269.0" style="-fx-background-image: url(&quot;image/fx1.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.OrderDetails">
+   <children>
+      <AnchorPane layoutX="23.0" layoutY="21.0" opacity="0.86" prefHeight="765.0" prefWidth="1226.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 20;">
+         <children>
+            <JFXTreeTableView layoutX="22.0" layoutY="479.0" prefHeight="270.0" prefWidth="1181.0" style="-fx-background-color: black;">
+               <columns>
+                  <TreeTableColumn prefWidth="87.0" text="Item Code" />
+                  <TreeTableColumn prefWidth="212.0" text="Diacription" />
+                  <TreeTableColumn minWidth="0.0" prefWidth="125.0" text="Qty" />
+                  <TreeTableColumn prefWidth="115.0" text="Unit Price" />
+                  <TreeTableColumn prefWidth="97.0" text="Date" />
+                  <TreeTableColumn prefWidth="163.0" text="Discount %" />
+                  <TreeTableColumn prefWidth="95.0" text="Type" />
+                  <TreeTableColumn prefWidth="132.0" text="Size" />
+                  <TreeTableColumn prefWidth="154.0" text="Amount" />
+               </columns>
+               <effect>
+                  <ColorAdjust brightness="0.1" />
+               </effect>
+            </JFXTreeTableView>
+            <ImageView fitHeight="13.0" fitWidth="155.0" layoutX="944.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="47.0" layoutY="51.0" onAction="#btnBackOnAction" ripplerFill="BLACK" style="-fx-background-color: #A4133C;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="540.0" layoutY="28.0" prefHeight="48.0" prefWidth="306.0" text="Order Details">
+         <font>
+            <Font name="Consolas Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnRefresh" buttonType="RAISED" layoutX="1108.0" layoutY="144.0" ripplerFill="BLACK" style="-fx-background-color: E09F3E;" text="Refresh" textFill="#f8f5f5">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTreeTableView layoutX="44.0" layoutY="210.0" prefHeight="270.0" prefWidth="1181.0" style="-fx-background-color: black;">
+         <columns>
+            <TreeTableColumn prefWidth="87.0" text="Order ID" />
+            <TreeTableColumn prefWidth="125.99996948242188" text="Date" />
+            <TreeTableColumn minWidth="0.0" prefWidth="143.0" text="Total" />
+            <TreeTableColumn prefWidth="176.0" text="Customer Name" />
+            <TreeTableColumn prefWidth="166.0" text="Contact" />
+            <TreeTableColumn prefWidth="182.0" text="Email" />
+            <TreeTableColumn prefWidth="152.0" text="Employer" />
+            <TreeTableColumn prefWidth="147.0" text="Arrears" />
+         </columns>
+         <effect>
+            <ColorAdjust brightness="0.1" />
+         </effect>
+      </JFXTreeTableView>
+      <Label alignment="CENTER" layoutX="34.0" layoutY="130.0" prefHeight="48.0" prefWidth="123.0" text="Order ID*:">
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="orderIdSearch" alignment="CENTER" layoutX="156.0" layoutY="121.0" prefHeight="39.0" prefWidth="186.0" promptText="Search">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1269.0" style="-fx-background-image: url(&quot;image/fx1.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.Order">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="16.0" opacity="0.86" prefHeight="765.0" prefWidth="1226.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 20;">
+         <children>
+            <JFXTreeTableView layoutX="22.0" layoutY="419.0" prefHeight="270.0" prefWidth="1181.0" style="-fx-background-color: black;">
+               <columns>
+                  <TreeTableColumn prefWidth="87.0" text="Item Code" />
+                  <TreeTableColumn prefWidth="200.99996948242188" text="Description" />
+                  <TreeTableColumn minWidth="0.0" prefWidth="68.0" text="Qty" />
+                  <TreeTableColumn prefWidth="130.0" text="Unit Price" />
+                  <TreeTableColumn prefWidth="114.0" text="Date" />
+                  <TreeTableColumn prefWidth="126.0" text="Discount%" />
+                  <TreeTableColumn prefWidth="114.0" text="Type" />
+                  <TreeTableColumn prefWidth="105.0" text="Size" />
+                  <TreeTableColumn prefWidth="109.0" text="Amount" />
+                  <TreeTableColumn prefWidth="126.0" text="Option" />
+               </columns>
+               <effect>
+                  <ColorAdjust brightness="0.1" />
+               </effect>
+            </JFXTreeTableView>
+            <ImageView fitHeight="13.0" fitWidth="155.0" layoutX="944.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+            <Label alignment="CENTER" layoutX="837.0" layoutY="11.0" prefHeight="48.0" prefWidth="165.0" text="Order ID*:">
+               <font>
+                  <Font name="Eras Bold ITC" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="37.0" layoutY="30.0" onAction="#btnBackOnAction" ripplerFill="BLACK" style="-fx-background-color: #A4133C;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="30.0" prefHeight="48.0" prefWidth="165.0" text="Orders">
+         <font>
+            <Font name="Consolas Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnPlaceOrder" buttonType="RAISED" layoutX="1072.0" layoutY="727.0" ripplerFill="BLACK" style="-fx-background-color: #A4133C;" text="Place Order" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane layoutX="43.0" layoutY="713.0" prefHeight="58.0" prefWidth="1009.0" style="-fx-background-color: #19323C;" />
+      <Label layoutX="66.0" layoutY="726.0" prefHeight="30.0" prefWidth="132.0" text="Total : " textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="total" layoutX="142.0" layoutY="729.0" text="0.00" textFill="#d1013c">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="332.0" layoutY="726.0" prefHeight="30.0" prefWidth="132.0" text="Discount : " textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="885.0" layoutY="725.0" prefHeight="30.0" prefWidth="132.0" text="Cash*: " textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="648.0" layoutY="726.0" prefHeight="30.0" prefWidth="132.0" text="Balance: " textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="ttlDiscount" layoutX="442.0" layoutY="729.0" text="0.00" textFill="#d1013c">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="balance" layoutX="743.0" layoutY="729.0" text="0.00" textFill="#d1013c">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="cash" layoutX="964.0" layoutY="727.0" text="0.00" textFill="#d1013c">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </Label>
+      <Line endX="258.0" endY="261.0" layoutX="350.0" layoutY="168.0" startX="258.0" startY="-64.0" />
+      <Label layoutX="40.0" layoutY="318.0" text="Date : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="40.0" layoutY="107.0" text="Employer* : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="163.0" text="Customer Name : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="266.0" text="Customer Email : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="216.0" text="Customer Contact : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="39.0" layoutY="368.0" text="Payment : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <JFXCheckBox fx:id="paymentCash" layoutX="154.0" layoutY="369.0" prefHeight="24.0" prefWidth="88.0" text="Cash" textFill="#1b1a1a">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXCheckBox fx:id="paymentCard" layoutX="354.0" layoutY="372.0" prefHeight="24.0" prefWidth="99.0" text="Card" textFill="#1b1a1a">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </JFXCheckBox>
+      <JFXTextField fx:id="employerId" layoutX="160.0" layoutY="87.0" prefHeight="39.0" prefWidth="186.0" promptText="Select Id">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="1013.0" layoutY="381.0" opacity="0.7" prefHeight="38.0" prefWidth="213.0" ripplerFill="BLACK" style="-fx-background-color: #335C67;" text="Add to Cart" textFill="#2f2c2c">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="900.0" layoutY="380.0" ripplerFill="BLACK" style="-fx-background-color: FFF3B0;" text="Update" textFill="#363434">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="806.0" layoutY="380.0" ripplerFill="BLACK" style="-fx-background-color: E09F3E;" text="Clear" textFill="#1e1d1d">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRemoveOrder" buttonType="RAISED" layoutX="619.0" layoutY="380.0" ripplerFill="BLACK" style="-fx-background-color: D1013C;" text="Remove Order" textFill="#111111">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="38.0" fitWidth="45.0" layoutX="1184.0" layoutY="380.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/icons8-cart-64.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="orderId" alignment="CENTER" layoutX="1004.0" layoutY="20.0" prefHeight="39.0" prefWidth="226.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fx:id="orderDropDown" fitHeight="31.0" fitWidth="38.0" layoutX="301.0" layoutY="92.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/down-arrow.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="EmployerName" alignment="CENTER" layoutX="371.0" layoutY="88.0" prefHeight="39.0" prefWidth="226.0" promptText="Employer Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="customerContact" alignment="CENTER" layoutX="228.0" layoutY="195.0" prefHeight="39.0" prefWidth="367.0" promptText="Contact">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="customerEmail" alignment="CENTER" layoutX="203.0" layoutY="253.0" prefHeight="39.0" prefWidth="389.0" promptText="email@gmail.com">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="customerName" alignment="CENTER" layoutX="209.0" layoutY="141.0" prefHeight="39.0" prefWidth="389.0" promptText="Customer Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="622.0" layoutY="103.0" text="Item Code* : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="619.0" layoutY="151.0" text="Description* : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="621.0" layoutY="198.0" text="Qty* : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="888.0" layoutY="201.0" text="Qty on Hand* : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="itemCode" alignment="CENTER" layoutX="754.0" layoutY="91.0" prefHeight="39.0" prefWidth="226.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField alignment="CENTER" layoutX="1009.0" layoutY="92.0" prefHeight="39.0" prefWidth="226.0" promptText="Select">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <ImageView fx:id="itemCodeDropDown" fitHeight="30.0" fitWidth="38.0" layoutX="1188.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/down-arrow.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="description" alignment="CENTER" layoutX="764.0" layoutY="137.0" prefHeight="39.0" prefWidth="472.0" text="Description">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="620.0" layoutY="256.0" text="Selling Price : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="624.0" layoutY="302.0" text="Type : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="625.0" layoutY="348.0" text="Discount : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="qty" alignment="CENTER" layoutX="692.0" layoutY="184.0" prefHeight="39.0" prefWidth="164.0" promptText="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="qtyOnHand" alignment="CENTER" layoutX="1043.0" layoutY="183.0" prefHeight="39.0" prefWidth="194.0" promptText="0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="974.0" layoutY="296.0" text="Size :">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="966.0" layoutY="252.0" text="Profit :">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="sellingPrice" alignment="CENTER" layoutX="753.0" layoutY="232.0" prefHeight="39.0" prefWidth="164.0" promptText="0.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="profit" alignment="CENTER" layoutX="1041.0" layoutY="229.0" prefHeight="39.0" prefWidth="194.0" promptText="0.00">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="type" alignment="CENTER" layoutX="690.0" layoutY="282.0" prefHeight="39.0" prefWidth="226.0" promptText="Type">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="size" alignment="CENTER" layoutX="1032.0" layoutY="274.0" prefHeight="39.0" prefWidth="205.0" promptText="Size">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="discount" alignment="CENTER" layoutX="724.0" layoutY="328.0" prefHeight="39.0" prefWidth="164.0" promptText="0.00 %">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="lblDate" alignment="CENTER" layoutX="104.0" layoutY="313.0" prefHeight="39.0" prefWidth="389.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>

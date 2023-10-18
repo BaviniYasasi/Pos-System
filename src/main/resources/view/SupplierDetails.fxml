@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTreeTableView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TreeTableColumn?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1269.0" style="-fx-background-image: url(&quot;image/fx1.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.SupplierDetails">
+   <children>
+      <AnchorPane layoutX="20.0" layoutY="20.0" opacity="0.8" prefHeight="765.0" prefWidth="1226.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 20;" />
+      <JFXTreeTableView fx:id="tblSupplier" layoutX="41.0" layoutY="499.0" prefHeight="270.0" prefWidth="1181.0" style="-fx-background-color: black;">
+         <columns>
+            <TreeTableColumn fx:id="colSupplierId" prefWidth="131.99996948242188" text="ID" />
+            <TreeTableColumn fx:id="colSupplierName" prefWidth="241.0" text="Name" />
+            <TreeTableColumn fx:id="colSupplierContact" minWidth="0.0" prefWidth="211.0" text="Contact" />
+            <TreeTableColumn fx:id="colSupplierCompany" prefWidth="191.0" text="Company" />
+            <TreeTableColumn fx:id="colSupplierAddress" prefWidth="212.0" text="Address" />
+            <TreeTableColumn fx:id="colSupplierOption" prefWidth="193.0" text="Option" />
+         </columns>
+         <effect>
+            <ColorAdjust brightness="0.1" />
+         </effect>
+      </JFXTreeTableView>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="47.0" layoutY="40.0" onAction="#btnBackOnAction" ripplerFill="BLACK" style="-fx-background-color: #A4133C;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="402.0" layoutY="24.0" prefHeight="48.0" prefWidth="355.0" text="Supplier Details">
+         <font>
+            <Font name="Consolas Bold" size="40.0" />
+         </font>
+      </Label>
+      <Line endX="258.0" endY="302.0" layoutX="360.0" layoutY="178.0" startX="258.0" startY="-64.0" />
+      <Label layoutX="50.0" layoutY="117.0" text="Supplier ID* : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="173.0">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="49.0" layoutY="274.0" text="Address :">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="176.0" text="Supplier Name* : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnPrint" buttonType="RAISED" layoutX="516.0" layoutY="443.0" onAction="#btnPrintOnAction" prefHeight="38.0" prefWidth="88.0" ripplerFill="BLACK" style="-fx-background-color: #335C67;" text="Print" textFill="#f8f6f6">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnClear" buttonType="RAISED" layoutX="428.0" layoutY="442.0" onAction="#btnClearOnAction" ripplerFill="BLACK" style="-fx-background-color: E09F3E;" text="Clear" textFill="#f8f5f5">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" layoutX="319.0" layoutY="442.0" onAction="#btnUpdateOnAction" ripplerFill="BLACK" style="-fx-background-color: D1013C;" text="Update" textFill="#fffbfb">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="supplierId" alignment="CENTER" layoutX="182.0" layoutY="98.0" prefHeight="39.0" prefWidth="226.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="supplierName" alignment="CENTER" layoutX="214.0" layoutY="153.0" prefHeight="39.0" prefWidth="367.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="company" alignment="CENTER" layoutX="153.0" layoutY="207.0" prefHeight="39.0" prefWidth="355.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="46.0" layoutY="329.0" text="Customer Contact : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="contact" alignment="CENTER" layoutX="231.0" layoutY="309.0" prefHeight="39.0" prefWidth="322.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="search" alignment="CENTER" layoutX="43.0" layoutY="440.0" prefHeight="39.0" prefWidth="186.0" promptText="Search">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="847.0" layoutY="86.0" prefHeight="48.0" prefWidth="165.0" text="Supplier">
+         <font>
+            <Font name="Eras Bold ITC" size="24.0" />
+         </font>
+      </Label>
+      <JFXTreeTableView layoutX="631.0" layoutY="158.0" prefHeight="324.0" prefWidth="599.0" style="-fx-background-color: F5F5F5;">
+         <columns>
+            <TreeTableColumn prefWidth="191.0" text="Company" />
+            <TreeTableColumn prefWidth="212.0" text="Contact" />
+            <TreeTableColumn prefWidth="193.0" text="Option" />
+         </columns>
+         <effect>
+            <ColorAdjust brightness="0.1" />
+         </effect>
+      </JFXTreeTableView>
+      <JFXButton fx:id="btnAdd" buttonType="RAISED" layoutX="243.0" layoutY="442.0" onAction="#btnAddOnAction" ripplerFill="BLACK" style="-fx-background-color: FFF3B0;" text="Add" textFill="#363434">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="46.0" layoutY="227.0" text="Company : ">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtAddress" alignment="CENTER" layoutX="145.0" layoutY="255.0" prefHeight="39.0" prefWidth="423.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="txtEmail" alignment="CENTER" layoutX="120.0" layoutY="357.0" prefHeight="39.0" prefWidth="423.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label layoutX="48.0" layoutY="377.0" text="Email :">
+         <font>
+            <Font name="Eras Demi ITC" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

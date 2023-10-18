@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="819.0" prefWidth="1287.0" style="-fx-background-image: url(&quot;image/fx1.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="40.0" layoutY="30.0" opacity="0.44" prefHeight="751.0" prefWidth="1200.0" style="-fx-background-color: D9D9D9;" />
+      <AnchorPane layoutX="90.0" layoutY="80.0" prefHeight="656.0" prefWidth="1104.0" style="-fx-background-color: D9D9D9; -fx-background-radius: 80;" />
+      <AnchorPane layoutX="759.0" layoutY="120.0" opacity="0.62" prefHeight="271.0" prefWidth="298.0" style="-fx-background-color: #38040E; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="88.0" layoutY="129.0" text="Admin" textAlignment="JUSTIFY" textFill="#fffafa">
+               <font>
+                  <Font name="Century" size="38.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="755.0" layoutY="430.0" opacity="0.62" prefHeight="271.0" prefWidth="298.0" style="-fx-background-color: #38040E; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="113.0" layoutY="128.0" text="User" textFill="WHITE">
+               <font>
+                  <Font name="Century" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="821.0" layoutY="317.0" prefHeight="43.0" prefWidth="173.0" style="-fx-background-color: #D9D9D9;">
+         <children>
+            <Label layoutX="24.0" layoutY="6.0" text="Continue" textAlignment="JUSTIFY" textFill="#141414">
+               <font>
+                  <Font name="Consolas" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="143.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/images%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="817.0" layoutY="617.0" prefHeight="43.0" prefWidth="173.0" style="-fx-background-color: #D9D9D9;">
+         <children>
+            <Label layoutX="24.0" layoutY="6.0" text="Continue">
+               <font>
+                  <Font name="Consolas" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="133.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/images%20(1).png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="865.0" layoutY="451.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/21104.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="858.0" layoutY="138.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/78948.png" />
+         </image></ImageView>
+      <ImageView fitHeight="262.0" fitWidth="368.0" layoutX="173.0" layoutY="270.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/Screenshot%202023-10-06%20160703.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

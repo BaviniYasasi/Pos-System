@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="800.0" prefWidth="1269.0" style="-fx-background-image: url(&quot;image/fx1.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.SalesReports">
+   <children>
+      <AnchorPane layoutX="22.0" layoutY="18.0" opacity="0.86" prefHeight="765.0" prefWidth="1226.0" style="-fx-background-color: #D9D9D9; -fx-background-radius: 20;">
+         <children>
+            <ImageView fitHeight="13.0" fitWidth="155.0" layoutX="944.0" layoutY="208.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+      <JFXButton fx:id="btnDailyReport" buttonType="RAISED" layoutX="988.0" layoutY="87.0" prefHeight="57.0" prefWidth="236.0" ripplerFill="BLACK" style="-fx-background-color: #495867;" text="Get Daily Report" textFill="#fffbfb">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="489.0" layoutY="29.0" prefHeight="48.0" prefWidth="306.0" text="Sales Reports">
+         <font>
+            <Font name="Consolas Bold" size="40.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnBack" buttonType="RAISED" layoutX="57.0" layoutY="61.0" onAction="#btnBackOnAction" ripplerFill="BLACK" style="-fx-background-color: #A4133C;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMonthlyReport" buttonType="RAISED" layoutX="989.0" layoutY="155.0" prefHeight="57.0" prefWidth="236.0" ripplerFill="BLACK" style="-fx-background-color: #E09F3E;" text="Get Monthly Report" textFill="#fffbfb">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAnnualReport" buttonType="RAISED" layoutX="989.0" layoutY="224.0" prefHeight="57.0" prefWidth="236.0" ripplerFill="BLACK" style="-fx-background-color: #1B998B;" text="Get Annual Report" textFill="#fffbfb">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDailyReturns" buttonType="RAISED" layoutX="987.0" layoutY="293.0" prefHeight="57.0" prefWidth="236.0" ripplerFill="BLACK" style="-fx-background-color: #2E294E;" text="Daily Returns" textFill="#fffbfb">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="day" alignment="CENTER" layoutX="58.0" layoutY="146.0" prefHeight="39.0" prefWidth="220.0" promptText="Today">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="44.0" layoutY="199.0" prefHeight="48.0" prefWidth="123.0" text="Profit* :">
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="profit" alignment="CENTER" layoutX="159.0" layoutY="191.0" prefHeight="39.0" prefWidth="220.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <Label alignment="CENTER" layoutX="46.0" layoutY="255.0" prefHeight="48.0" prefWidth="164.0" text="Sales Count* :">
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="34.0" layoutY="305.0" prefHeight="48.0" prefWidth="123.0" text="Sales* :">
+         <font>
+            <Font name="Eras Bold ITC" size="18.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="salesCount" alignment="CENTER" layoutX="198.0" layoutY="244.0" prefHeight="39.0" prefWidth="220.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="sales" alignment="CENTER" layoutX="141.0" layoutY="296.0" prefHeight="39.0" prefWidth="220.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="btnSalesReport" buttonType="RAISED" layoutX="529.0" layoutY="367.0" prefHeight="57.0" prefWidth="197.0" ripplerFill="BLACK" style="-fx-background-color: #335C67;" text="Sales Reports" textFill="#f8f6f6">
+         <font>
+            <Font name="Eras Bold ITC" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox layoutX="220.0" layoutY="154.0" />
+   </children>
+</AnchorPane>
